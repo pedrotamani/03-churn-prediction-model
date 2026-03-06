@@ -1,67 +1,58 @@
 # 🤖 Telecom Customer Churn Prediction
 
-Machine Learning project focused on predicting customer churn in a telecommunications company.
+**Goal:** Predict which customers are likely to churn to **prioritize retention actions**.
+
+**Role:** I translated predictive model outputs into **management decisions**, not just coding.  
+**Focus:** Operational impact, decision support, business relevance.
 
 ---
 
 ## 📌 Project Overview
 
-Customer churn prediction enables companies to identify customers who are likely to leave and take proactive actions to retain them.
-
-In this project, machine learning techniques are applied to predict churn based on historical customer data. The workflow includes data preprocessing, feature engineering, model training, and model evaluation.
-
-The goal is to build a predictive model capable of estimating churn probability based on customer attributes.
+Machine learning applied to historical customer data to estimate churn probability.  
+The emphasis is **decision-making and business application**, not just model performance.
 
 ---
 
 ## 📂 Dataset
 
-The dataset includes variables such as:
+Includes:
 
-- Demographics
-- Service subscriptions
-- Contract information
-- Billing details
-- Customer tenure
-- Churn label
+- Customer demographics  
+- Service subscriptions  
+- Contract info  
+- Billing details  
+- Tenure  
+- Churn label  
 
-These variables are used as features to train predictive models.
+Used as features to train predictive models.
 
 ---
 
-## 🛠 Tools and Technologies
+## 🛠 Tools & Technologies
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Matplotlib
-- Seaborn
-- Google Colab
+- Python (Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn)  
+- Google Colab  
+- Excel & Power BI  
+
+> ML used as **support for actionable business insights**.
 
 ---
 
 ## ⚙️ Machine Learning Workflow
 
-The project follows a typical machine learning pipeline:
+- Data cleaning & preprocessing  
+- Feature engineering  
+- Train-test split  
+- Model training & evaluation  
 
-1. Data cleaning and preprocessing
-2. Feature engineering
-3. Train-test split
-4. Model training
-5. Model evaluation
+### 🤖 Models Applied
 
----
+- Logistic Regression  
+- Decision Trees  
+- Random Forest  
 
-## 🤖 Models Applied
-
-Examples of models used in churn prediction:
-
-- Logistic Regression
-- Decision Trees
-- Random Forest
-
-Model performance is evaluated using common classification metrics.
+Evaluation uses standard classification metrics, **interpreted for business decisions**.
 
 ---
 
@@ -82,36 +73,33 @@ churn-prediction-model/
 │
 └── README.md
 
-data/ → dataset used for modeling  
-notebooks/ → notebook with model development and evaluation  
-README.md → project documentation  
+- data/       → dataset used for modeling  
+- notebooks/  → notebook with model development and evaluation  
+- outputs/    → generated figures  
+- README.md   → project documentation  
 ```
 ---
 
-## 📊 Results
+## 📈 Key Results
 
-The model identifies patterns that help estimate churn probability based on customer characteristics.
-
-These predictions can support companies in prioritizing customer retention strategies.
+- Estimated churn probability for customers  
+- Insights help **prioritize retention strategies**  
+- Focused on translating predictions into **actionable business decisions**
 
 ---
 
 ## ▶️ Run the Notebook
 
-You can explore and run the analysis directly in **Google Colab**.
-
-1. Click the **Open in Colab** button below  
-2. Upload the CSV files if necessary  
-3. Run the notebook cells step by step
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](PASTE_YOUR_COLAB_NOTEBOOK_LINK_HERE)
+- Open in Google Colab  
+- Upload CSV dataset  
+- Execute cells step by step  
 
 ---
 
 ## 👤 Author
 
 Pedro Tamani  
-Economist | Business Analysis | Data-Driven Insights  
+Economist | Business Analysis | Decision Support  
 
 📍 Based in Lima, Peru  
 🔗 LinkedIn: 
