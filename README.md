@@ -102,6 +102,7 @@ Pedro Tamani
 Economist | Business Analysis | Decision Support  
 
 📍 Based in Lima, Peru  
+
 🔗 LinkedIn: 
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-PedroTamani-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/pedrotamani)
