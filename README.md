@@ -1,112 +1,121 @@
-# 🚀 Telecom X - Parte 2: Predicción de Churn de Clientes
+# 🤖 Telecom Customer Churn Prediction
 
-![GitHub](https://img.shields.io/badge/Python-3.8%2B-blue)
-![GitHub](https://img.shields.io/badge/Licencia-MIT-green)
-
----
-
-## 📌 Objetivo del Proyecto
-**Predecir la cancelación de clientes (Churn)** mediante análisis de variables clave como:
-🔹 Antigüedad (`tenure`)
-🔹 Tipo de contrato
-🔹 Métodos de pago
-🔹 Servicios contratados
-
-**KPI Principal**: Reducir la tasa de churn del 26.5% al 15% mediante estrategias basadas en datos.
+Machine Learning project focused on predicting customer churn in a telecommunications company.
 
 ---
 
-## 📂 Estructura del Proyecto
-````
+## 📌 Project Overview
+
+Customer churn prediction enables companies to identify customers who are likely to leave and take proactive actions to retain them.
+
+In this project, machine learning techniques are applied to predict churn based on historical customer data. The workflow includes data preprocessing, feature engineering, model training, and model evaluation.
+
+The goal is to build a predictive model capable of estimating churn probability based on customer attributes.
+
+---
+
+## 📂 Dataset
+
+The dataset includes variables such as:
+
+- Demographics
+- Service subscriptions
+- Contract information
+- Billing details
+- Customer tenure
+- Churn label
+
+These variables are used as features to train predictive models.
+
+---
+
+## 🛠 Tools and Technologies
+
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib
+- Seaborn
+- Google Colab
+
+---
+
+## ⚙️ Machine Learning Workflow
+
+The project follows a typical machine learning pipeline:
+
+1. Data cleaning and preprocessing
+2. Feature engineering
+3. Train-test split
+4. Model training
+5. Model evaluation
+
+---
+
+## 🤖 Models Applied
+
+Examples of models used in churn prediction:
+
+- Logistic Regression
+- Decision Trees
+- Random Forest
+
+Model performance is evaluated using common classification metrics.
+
+---
+
+## 📁 Repository Structure
+```
+churn-prediction-model/
+│
 ├── data/
-│ ├── raw/ # Datos originales (clientes_raw.csv)
-│ └── processed/ # Datos procesados (clientes_clean.csv)
+│   ├── raw/
+│   └── processed/
+│
 ├── notebooks/
-│ ├── 1_EDA_Churn.ipynb # Análisis exploratorio
-│ └── 2_Modelado_Churn.ipynb # Modelos predictivos
+│   ├── exploratory_analysis.ipynb
+│   └── churn_modeling.ipynb
+│
 ├── outputs/
-│ ├── figures/ # Gráficos guardados (.png)
-│ └── reports/ # Informes en PDF
-└── README.md # Este archivo
-````
+│   └── figures/
+│
+└── README.md
+
+data/ → dataset used for modeling  
+notebooks/ → notebook with model development and evaluation  
+README.md → project documentation  
+```
 ---
 
-## 🔍 Proceso de Preparación de Datos
+## 📊 Results
 
-### 1. Clasificación de Variables
-| Tipo          | Ejemplos                          | Tratamiento                 |
-|---------------|-----------------------------------|-----------------------------|
-| **Numéricas** | tenure, MonthlyCharges            | Estandarización (StandardScaler) |
-| **Categóricas** | Contract, PaymentMethod         | One-Hot Encoding            |
-| **Binarias**  | Churn, PaperlessBilling          | Mapeo (Yes=1, No=0)         |
+The model identifies patterns that help estimate churn probability based on customer characteristics.
 
-### 2. Transformaciones Clave
-```python
-# Codificación de variables categóricas
-df_encoded = pd.get_dummies(df, columns=['Contract', 'PaymentMethod'])
-
-# Estandarización de numéricas
-scaler = StandardScaler()
-df[['tenure', 'MonthlyCharges']] = scaler.fit_transform(df[['tenure', 'MonthlyCharges']])
-````
-### 3. División Train-Test
-````
-X_train, X_test, y_train, y_test = train_test_split(
-    X, y, 
-    test_size=0.3, 
-    stratify=y,
-    random_state=42
-)
-````
-Justificación: 30% para test permite evaluación robusta manteniendo datos suficientes para entrenamiento.
+These predictions can support companies in prioritizing customer retention strategies.
 
 ---
 
-🤖 Modelización
-Modelos Implementados
-| Modelo          | Precisión                          | Recall (Churn)                 | Requiere Escalado
-|---------------|-----------------------------------|-----------------------------|-----------------------------|
-| **Regresión Logística** | 72%            | 74% |Sí|
-| **Random Forest** | 79%	         | 65%           |No|
+## ▶️ Run the Notebook
 
-Elección Final: Random Forest por mejor balance accuracy-recall.
+You can explore and run the analysis directly in **Google Colab**.
 
----
-📌 Conclusiones
+1. Click the **Open in Colab** button below  
+2. Upload the CSV files if necessary  
+3. Run the notebook cells step by step
 
-Factores críticos:
-
-🔹 Contratos mensuales (45% impacto)
-
-🔹 Antigüedad <12 meses (38%)
-
-Recomendaciones:
-
-🔹 Convertir 30% contratos mensuales a anuales
-
-🔹 Programa de retención para clientes nuevos
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](PASTE_YOUR_COLAB_NOTEBOOK_LINK_HERE)
 
 ---
 
-## 🛠️ Cómo Ejecutar el Proyecto
+## 👤 Author
 
-### 📌 Requisitos Previos
+Pedro Tamani  
+Economist | Business Analysis | Data-Driven Insights  
 
-🔹 Python 3.8+
+📍 Based in Lima, Peru  
+🔗 LinkedIn: 
 
-🔹 Jupyter Notebook
-
-🔹 Librerías listadas en `requirements.txt`
-
-### Instalación
-
-```bash
-git clone https://github.com/tu_usuario/telecom-churn-analysis.git
-cd telecom-churn-analysis
-pip install -r requirements.txt
-````
----
-
-## 📬 Contacto
-
-Cualquier duda o sugerencia, puedes escribirme a pedro.tamani@gmail.com
+<a href="linkedin.com/in/pedrotamani/">
+  <img src="https://img.shields.io/static/v1?style=for-the-badge&message=LinkedIn&color=0077B5&logo=linkedin&logoColor=FFFFFF&label=" height="40">
+</a>
