@@ -116,6 +116,7 @@ Economist | Business Analysis | Data-Driven Insights
 📍 Based in Lima, Peru  
 🔗 LinkedIn: 
 
-<a href="linkedin.com/in/pedrotamani/">
-  <img src="https://img.shields.io/static/v1?style=for-the-badge&message=LinkedIn&color=0077B5&logo=linkedin&logoColor=FFFFFF&label=" height="40">
-</a>
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-PedroTamani-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/pedrotamani)
+
+📧 Email  
+pedro.tamani@gmail.com
